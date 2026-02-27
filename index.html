@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>マントラ — 魂への振動 | Alvar Ayurveda</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@200;300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --teal: #2a9d8f;
+  --teal-light: #4ecdc4;
+  --teal-pale: #a8e6e2;
+  --teal-ultra: rgba(78,205,196,0.08);
+  --dark: #1a3a38;
+  --text: #2c4a47;
+  --soft: #5a7a78;
+  --bg: #fafffe;
+  --white: #ffffff;
+  --gold: #c9a84c;
+  --border: rgba(42,157,143,0.15);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  line-height: 1.9;
+}
+
+/* ===== WATERMARK ===== */
+.watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-35deg);
+  font-family: 'Cinzel', serif;
+  font-size: clamp(4rem, 15vw, 10rem);
+  font-weight: 700;
+  color: rgba(42,157,143,0.04);
+  letter-spacing: 0.5em;
+  pointer-events: none;
+  z-index: 1000;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* ===== GLOBAL FOOTER ===== */
+.global-footer {
+  text-align: center;
+  padding: 32px 20px 40px;
+  border-top: 1px solid var(--border);
+  margin-top: 0;
+  background: var(--white);
+}
+.global-footer-brand {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  letter-spacing: 0.4em;
+  color: var(--teal);
+  display: block;
+  margin-bottom: 4px;
+}
+.global-footer-location {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  color: var(--soft);
+}
+
+/* ===== PAGE FOOTER (on each section) ===== */
+.page-footer {
+  text-align: center;
+  padding: 16px 0 0;
+  margin-top: 40px;
+  border-top: 1px solid rgba(42,157,143,0.1);
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  color: rgba(42,157,143,0.4);
+}
+
+/* ===== COVER ===== */
+.cover {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #b2eeea 0%, #7dd8d3 30%, #4ecdc4 60%, #2a9d8f 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.cover::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 500px; height: 500px;
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+}
+.cover::after {
+  content: '';
+  position: absolute;
+  bottom: -150px; left: -150px;
+  width: 600px; height: 600px;
+  border: 2px solid rgba(255,255,255,0.08);
+  border-radius: 50%;
+}
+.cover-mandala {
+  font-size: 5rem;
+  margin-bottom: 24px;
+  opacity: 0.3;
+  display: block;
+}
+.cover-brand {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.5em;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 20px;
+  display: block;
+}
+.cover-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.5rem, 10vw, 6rem);
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.1);
+}
+.cover-subtitle {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.15em;
+  margin-bottom: 48px;
+}
+.cover-divider {
+  width: 80px;
+  height: 1px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 auto 32px;
+}
+.cover-footer-text {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  color: rgba(255,255,255,0.7);
+}
+
+/* ===== SECTION WRAPPER ===== */
+.section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 80px 48px;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+.section:last-of-type { border-bottom: none; }
+
+/* ===== CHAPTER HEADINGS ===== */
+.chapter-label {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.35em;
+  color: var(--teal-light);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+.chapter-title-large {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 300;
+  color: var(--teal);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.chapter-title-bold {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.3;
+  margin-bottom: 32px;
+}
+.chapter-title-combined {
+  margin-bottom: 32px;
+}
+
+/* ===== BODY TEXT ===== */
+.body-text {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 2;
+  margin-bottom: 20px;
+}
+.body-text:last-child { margin-bottom: 0; }
+
+/* ===== TWO COL LAYOUT ===== */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.two-col-wide {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ===== DECORATIVE MANDALA SVG ===== */
+.mandala-deco {
+  opacity: 0.18;
+  color: var(--teal);
+}
+.mandala-corner-tr {
+  position: absolute;
+  top: 40px; right: 40px;
+  width: 120px; height: 120px;
+  opacity: 0.12;
+}
+.mandala-corner-bl {
+  position: absolute;
+  bottom: 40px; left: 40px;
+  width: 100px; height: 100px;
+  opacity: 0.1;
+}
+
+/* ===== ILLUSTRATION PAGE ===== */
+.illustration-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(78,205,196,0.05) 0%, rgba(42,157,143,0.03) 100%);
+  padding: 80px 48px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.illustration-emoji {
+  font-size: 10rem;
+  opacity: 0.15;
+  filter: hue-rotate(160deg) saturate(2);
+  display: block;
+}
+
+/* ===== MANTRA PAGE ===== */
+.mantra-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 80px 48px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.mantra-page::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--teal-light), transparent);
+}
+
+.mantra-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 300;
+  color: var(--teal);
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+.mantra-name span {
+  font-weight: 400;
+  color: var(--dark);
+}
+
+.mantra-sanskrit {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.1rem;
+  color: var(--soft);
+  font-style: italic;
+  line-height: 2;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  border-left: 2px solid var(--teal-pale);
+}
+
+.mantra-roman {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  color: var(--teal);
+  line-height: 2;
+  margin-bottom: 32px;
+  letter-spacing: 0.05em;
+}
+
+.mantra-section-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.85rem;
+  color: var(--teal);
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mantra-section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.meaning-text {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 2;
+  margin-bottom: 28px;
+}
+.meaning-text p { margin-bottom: 6px; }
+
+.benefits-text {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 2;
+}
+.benefits-text li {
+  list-style: none;
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 4px;
+}
+.benefits-text li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--teal-light);
+  font-size: 0.6rem;
+  top: 8px;
+}
+
+/* ===== DECORATIVE ELEMENTS ===== */
+.teal-circle {
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(78,205,196,0.12) 0%, transparent 70%);
+  position: absolute;
+}
+.side-mandala {
+  position: absolute;
+  right: 32px;
+  top: 80px;
+  opacity: 0.08;
+  font-size: 8rem;
+  color: var(--teal);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ===== HORIZONTAL RULE ===== */
+.ornamental-hr {
+  text-align: center;
+  margin: 36px 0;
+  color: var(--teal-pale);
+  font-size: 1rem;
+  letter-spacing: 0.5em;
+}
+
+/* ===== TABLE OF CONTENTS ===== */
+.toc {
+  background: linear-gradient(135deg, rgba(78,205,196,0.06) 0%, rgba(42,157,143,0.03) 100%);
+  border-radius: 16px;
+  padding: 48px;
+  border: 1px solid var(--border);
+}
+.toc-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  color: var(--dark);
+  letter-spacing: 0.2em;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 0;
+  border-bottom: 1px dotted rgba(42,157,143,0.2);
+  font-size: 0.95rem;
+}
+.toc-item:last-child { border-bottom: none; }
+.toc-item-name { color: var(--text); }
+.toc-item-sanskrit { font-size: 0.8rem; color: var(--soft); margin-top: 2px; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .section, .mantra-page { padding: 48px 24px; }
+  .two-col, .two-col-wide { grid-template-columns: 1fr; gap: 32px; }
+  .cover { padding: 60px 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- WATERMARK -->
+<div class="watermark">ALVAR</div>
+
+<!-- ===== COVER ===== -->
+<div class="cover">
+  <span class="cover-mandala">❋</span>
+  <span class="cover-brand">ALVAR AYURVEDA · OSAKA HONMACHI</span>
+  <h1 class="cover-title">Mantras</h1>
+  <p class="cover-subtitle">魂への振動<br><em style="font-size:0.85em;opacity:0.8">Vibrations For Your Soul</em></p>
+  <div class="cover-divider"></div>
+  <span class="cover-footer-text">॥ ॐ ॥</span>
+</div>
+
+<!-- ===== PAGE 3: WHAT IS MANTRA ===== -->
+<div class="section">
+  <div class="mandala-corner-tr">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="45" stroke="#4ecdc4" stroke-width="1"/>
+      <circle cx="50" cy="50" r="35" stroke="#4ecdc4" stroke-width="0.5"/>
+      <circle cx="50" cy="50" r="25" stroke="#4ecdc4" stroke-width="0.5"/>
+      <circle cx="50" cy="50" r="8" fill="none" stroke="#4ecdc4" stroke-width="1"/>
+      <line x1="50" y1="5" x2="50" y2="95" stroke="#4ecdc4" stroke-width="0.3"/>
+      <line x1="5" y1="50" x2="95" y2="50" stroke="#4ecdc4" stroke-width="0.3"/>
+      <line x1="19" y1="19" x2="81" y2="81" stroke="#4ecdc4" stroke-width="0.3"/>
+      <line x1="81" y1="19" x2="19" y2="81" stroke="#4ecdc4" stroke-width="0.3"/>
+    </svg>
+  </div>
+
+  <span class="chapter-label">第一章</span>
+  <div class="chapter-title-combined">
+    <div class="chapter-title-large">マントラとは</div>
+    <div class="chapter-title-bold">何でしょうか？</div>
+  </div>
+
+  <p class="body-text">マントラとは、神秘的または霊的な効力を持つとされる神聖な発声（音節・言葉・詩節）です。唱えること、囁くこと、あるいは心の中で静かに繰り返すことで、強力な瞑想とヒーリングのツールとなります。</p>
+  <p class="body-text">マントラは一定の時間継続して繰り返すか、あるいは一度だけ唱えます。ほとんどのマントラには明確な言語的意味はありませんが、深遠な根本的意義を持ち、霊的知恵の精髄とされています。</p>
+  <p class="body-text">特定のマントラを繰り返すことや、それに瞑想することで、トランス状態が誘発され、より高次の霊的意識と悟りへと導かれます。マントラは邪悪な霊力から身を守るなど、多くの霊的・神秘的な目的に使用されます。最も強力で広く使われるマントラのひとつが、神聖な音節「オーム（om）」です。仏教における主要なマントラは「オーム・マニ・パドメ・フーム（om mani padme hūm）」です。</p>
+  <p class="body-text">マントラはヒンドゥー教の宗教的儀式や日常の儀礼において重要な役割を果たし続けています。多くのヒンドゥー教の宗派への入門には、グルが入門者の耳に秘密のマントラを囁くことが含まれます。マントラは、グルや霊的師から直接口頭で受け取られたときに、はじめて真の効力を発揮すると考えられています。</p>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 4: IMPORTANCE / HOW REVEALED ===== -->
+<div class="section">
+  <div class="two-col-wide">
+    <div>
+      <div class="chapter-title-combined">
+        <div class="chapter-title-large">マントラの重要性</div>
+        <div class="chapter-title-bold">あなたの人生における</div>
+      </div>
+      <p class="body-text">マントラという言葉はサンスクリット語に由来し、二つの部分に分解できます。「マナス（manas）」は心を意味し、「トラ（tra）」は運搬または乗り物を意味します。つまり、心を運び、高めるための道具や乗り物として解釈できます。多くの人がマントラを、日常の思考から退いて、直感・霊的強さ・幸福の能力を深める手段として体験しています。</p>
+    </div>
+    <div>
+      <div class="chapter-title-combined">
+        <div class="chapter-title-large">マントラは</div>
+        <div class="chapter-title-bold">どのように啓示されるのか？</div>
+      </div>
+      <p class="body-text">言葉を受け取った聖者たちは、その力によって祝福されました。摂取された力は聖者の行動と言葉の中に自然発生的に現れ、修行者たちを引き寄せ、言葉を受け取る準備をさせました。</p>
+      <p class="body-text">マントラは潜在意識の深部に浸透し、存在のすべての側面の振動を調整するために使われる繰り返しの音です。マントラは声に出して唱えること、心の中での実践、または聴くことによって振動されます。音の振動があなたの存在に影響を与える体験が、ナード・ヨーガ（Naad yoga）です。</p>
+    </div>
+  </div>
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 7: NEUROLOGICAL EFFECTS / HEALING ===== -->
+<div class="section">
+  <span class="chapter-label">第二章</span>
+  <div class="chapter-title-combined">
+    <div class="chapter-title-large">マントラの脳への</div>
+    <div class="chapter-title-bold">神経学的効果とは？</div>
+  </div>
+
+  <p class="body-text">ヨガクラスで唱えるものが常に深い静けさをもたらすのはなぜか、不思議に思ったことはありますか？神経科学の観点から、マントラがあなたのヨガの実践にいかに強力な効果をもたらすかをお伝えします。</p>
+  <p class="body-text">先進的な脳画像ツールを備えた神経科学者たちは、この古代の実践の健康上の利点を定量化・確認し始めています。例えば、心のバックグラウンドノイズを解放し、神経系を落ち着かせる能力などです。</p>
+
+  <div class="ornamental-hr">· · ✦ · ·</div>
+
+  <div class="chapter-title-combined">
+    <div class="chapter-title-large">マントラは</div>
+    <div class="chapter-title-bold">体を癒せるのか？</div>
+  </div>
+
+  <p class="body-text">私たちの体には、自分自身を守り修復するための古代から備わったメカニズムがあります。マントラは、細胞レベルで私たちの振動・周波数・エネルギーに影響を与えることが知られている神聖な音であり、体・心・魂の癒しに重要な役割を果たす可能性があります。</p>
+  <p class="body-text">マントラは意識のレベルで作用する霊的・心理的な力を持ち、全体的な癒しのプロセスに不可欠とされています。マントラはネガティブで反発的な振動をよりポジティブで魅力的な振動へと転換し、癒しのプロセスにはるかに良い環境を生み出します。</p>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 10: MALA ===== -->
+<div class="section">
+  <div class="two-col">
+    <div>
+      <span class="chapter-label">第三章</span>
+      <div class="chapter-title-combined">
+        <div class="chapter-title-large">マーラーを使うべきか？</div>
+        <div class="chapter-title-bold">どのマントラにどのマーラーを？</div>
+      </div>
+      <p class="body-text">マーラー（Mala）は、瞑想の一形態として108回の繰り返しでマントラ（サンスクリットの祈り）を数えるために使用されるビーズの連なりです。これがマーラーを使用する主な方法ですが、心を強化し、心・体・魂を癒すための実践にはいくつかの別の方法もあります。</p>
+      <p class="body-text">これら5つの主要なテクニックのほとんどは、マーラーを使用することの精神的・霊的・癒し的効果を増幅するために組み合わせることができます。</p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;">
+      <div style="text-align:center;opacity:0.15;font-size:8rem;color:var(--teal);">📿</div>
+    </div>
+  </div>
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 12: GANESHA ILLUSTRATION ===== -->
+<div class="illustration-page">
+  <div>
+    <div style="font-size:8rem;opacity:0.2;margin-bottom:20px;">🐘</div>
+    <div style="font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.4em;color:var(--soft);opacity:0.6;">ガネーシャ</div>
+  </div>
+  <div class="page-footer" style="position:absolute;bottom:32px;left:0;right:0;">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 13: GANESHA MANTRA ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Ganesha<br><span>ガネーシャ</span></div>
+
+  <div class="mantra-sanskrit">
+    वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।<br>
+    निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥
+  </div>
+
+  <div class="mantra-roman">
+    Vakra-Tunndda Maha-Kaaya<br>
+    Suurya-Kotti Samaprabha |<br>
+    Nirvighnam Kuru Me Deva<br>
+    Sarva-Kaaryessu Sarvadaa ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>1：（スリー・ガネーシャへの礼拝）曲がった鼻を持ち、巨大な体を持ち、その輝きが百万の太陽に似ている方へ</p>
+    <p>2：おお神よ、すべての仕事において常にあなたの加護を与え、私の試みを障害から解放してください。</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <ul class="benefits-text">
+    <li>富、知恵、幸運、繁栄、そしてすべての試みにおける成功をもたらします</li>
+    <li>障害を取り除き、新しい始まりを祝福します</li>
+  </ul>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 14: GAYATRI ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Gayatri<br><span>ガーヤトリー</span></div>
+
+  <div class="mantra-sanskrit">
+    ॐ भूर्भुवः स्वः<br>
+    तत्सवितुर्वरेण्यं<br>
+    भर्गो देवस्य धीमहि<br>
+    धियो यो नः प्रचोदयात् ॥
+  </div>
+
+  <div class="mantra-roman">
+    Om Bhuur-Bhuvah Svah<br>
+    Tat-Savitur-Varennyam<br>
+    Bhargo Devasya Dhiimahi<br>
+    Dhiyo Yo Nah Pracodayaat ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>1：オーム、ブー・ローカ（地球）、ブヴァル・ローカ（中間空間）、スワル・ローカ（天）に遍在する</p>
+    <p>2：最も崇拝すべきサヴィトゥル（太陽の神聖な本質）</p>
+    <p>3：その神聖な輝きに瞑想します</p>
+    <p>4：その知性（霊的意識）を目覚めさせてください</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <ul class="benefits-text">
+    <li>集中力と学習能力の向上</li>
+    <li>体内の毒素の除去</li>
+    <li>呼吸の改善</li>
+    <li>心臓の健康維持</li>
+    <li>ネガティブなエネルギーの除去</li>
+  </ul>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 15: SHANTI ===== -->
+<div class="mantra-page">
+  <div class="mantra-name">Shanti<br><span>シャンティ — 平和</span></div>
+
+  <div class="mantra-sanskrit">
+    ॐ सह नाववतु । सह नौ भुनक्तु ।<br>
+    सह वीर्यं करवावहै । तेजस्वि नावधीतमस्तु<br>
+    मा विद्विषावहै ।<br>
+    ॐ शान्तिः शान्तिः शान्तिः ॥
+  </div>
+
+  <div class="mantra-roman">
+    Om Saha Nau-Avatu | Saha Nau Bhunaktu |<br>
+    Saha Viiryam Karavaavahai |<br>
+    Tejasvi Nau-Adhiitam-Astu Maa Vidvissaavahai |<br>
+    Om Shaantih Shaantih Shaantih ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>オーム！</p>
+    <p>私たち両方が守られますように。私たち両方が養われますように。</p>
+    <p>私たちが大きなエネルギーで共に働けますように。私たちの知識が輝きますように。</p>
+    <p>私たちの間に違いや争いがありませんように。</p>
+    <p>オーム、平和（内側）、平和（周囲）、平和（間）</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>自分自身と人類を発展させるために団結を信じる力を与え、自分のために書いたすべての目標を達成させてくれます。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 16: MAHAMRITYUNJAYA ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Mahamrityunjaya<br><span>マハームリティユンジャヤ</span></div>
+
+  <div class="mantra-sanskrit">
+    ॐ त्र्यम्बकं यजामहे<br>
+    सुगन्धिं पुष्टिवर्धनम् ।<br>
+    उर्वारुकमिव बन्धनान्<br>
+    मृत्योर्मुक्षीय माऽमृतात् ॥
+  </div>
+
+  <div class="mantra-roman">
+    Om Try-Ambakam Yajaamahe<br>
+    Sugandhim Pusstti-Vardhanam<br>
+    Urvaarukam-Iva Bandhanaan<br>
+    Mrtyor-Mukssiiya Maa-[A]mrtaat ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>1：オーム、三眼の方（トリャンバカ）を崇拝します</p>
+    <p>2：芳香を放ち（霊的本質として）、私たちの霊的核の滋養を増やす方</p>
+    <p>3：輪廻の多くの束縛（つる草に結ばれたキュウリのような）から</p>
+    <p>4：死から解放されますように（無常なものへの執着から）、不死の認識から離れないように</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>マハームリティユンジャヤ・マントラは健康と幸福を回復し、死に直面しても静けさをもたらします。月食の時に特に強力なマントラです。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 17: SHIVA ILLUSTRATION ===== -->
+<div class="illustration-page">
+  <div>
+    <div style="font-size:8rem;opacity:0.18;margin-bottom:20px;">🔱</div>
+    <div style="font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.4em;color:var(--soft);opacity:0.6;">シヴァ</div>
+  </div>
+  <div class="page-footer" style="position:absolute;bottom:32px;left:0;right:0;">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 18: GURU BRAHMA ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Guru Brahma<br><span>グル・ブラフマー</span></div>
+
+  <div class="mantra-sanskrit">
+    गुरुर्ब्रह्मा गुरुर्विष्णु र्गुरुर्देवो महेश्वरः<br>
+    गुरु साक्षात परब्रह्मा तस्मै श्रीगुरवे नमः
+  </div>
+
+  <div class="mantra-roman">
+    GururBrahma GururVishnu GururDevo Maheshwaraha<br>
+    Guru Saakshaat ParaBrahma Tasmai Sri Gurave Namaha
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>グルは創造者（ブラフマー）、グルは守護者（ヴィシュヌ）、グルデーヴァは破壊者（マヘーシュワラ）</p>
+    <p>グルはその絶対的な（唯一の）主ご自身、スリー・グルへの礼拝</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <ul class="benefits-text">
+    <li>心の平和をもたらし、すべての精神的・肉体的苦悩と心配を取り除きます</li>
+    <li>すべての恐れを取り除き、大きな自信と信仰の感覚を植え付けます</li>
+    <li>修行者の霊的な旅を助け、解脱へと導きます</li>
+  </ul>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 19: KARAAGRE VASATE LAKSHMI ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Karaagre Vasate<br><span>カラーグレ・ヴァサテ・ラクシュミー</span></div>
+
+  <div class="mantra-sanskrit">
+    करागरे वसते लक्ष्मीः करमध्ये सरस्वती ।<br>
+    करमूले तु गोविन्दः प्रभाते करदर्शनम् ॥
+  </div>
+
+  <div class="mantra-roman">
+    Karaagre Vasate Lakssmih Karamadhye Sarasvati |<br>
+    Karamuule Tu Govindah Prabhaate Karadarshanam ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>1：手の先端（手のひら）にはデーヴィー・ラクシュミーが宿り、手の中央にはデーヴィー・サラスワティーが宿る</p>
+    <p>2：手の根本にはスリー・ゴーヴィンダが宿る。それゆえ、早朝に自分の手を見て、それらを瞑想すべきである</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>適切な生活に必要なお金・知識・健康をもたらします。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 20: PRATAH SMARAMI ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Pratah Smarami<br><span>プラータハ・スマラーミ</span></div>
+
+  <div class="mantra-sanskrit">
+    प्रातः स्मरामि भवभीतिहरं सुरेशं<br>
+    गङ्गाधरं वृषभवाहनमम्बिकेशम् ।<br>
+    खट्वाङ्गशूलवरदाभयहस्तमीशं<br>
+    संसाररोगहरमौषधमद्वितीयम् ॥
+  </div>
+
+  <div class="mantra-roman">
+    Praatah Smaraami Bhava-Bhiiti-Haram Sure[a-Ii]sham<br>
+    Ganggaa-Dharam Vrssabha-Vaahanam-Ambike[a-Ii]sham |<br>
+    Khattvaangga-Shuula-Varada-Abhaya-Hastam-Iisham<br>
+    Samsaara-Roga-Haram-Aussadham-Advitiiyam ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>1.1 早朝に、世俗的存在の恐怖を滅し、デーヴァたちの主であるスリー・シヴァを想い起こします</p>
+    <p>1.2 頭にガンガー川を保ち、牛を乗り物とし、デーヴィー・アンビカーの主である方</p>
+    <p>3 二つの手に棍棒と三叉槍を持ち、他の二つの手で恩恵と無畏を授け、宇宙の主である方</p>
+    <p>4 世俗的存在の幻惑の病を癒す薬であり、比類なき唯一の存在である方</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <ul class="benefits-text">
+    <li>幸運、繁栄、名声をもたらします</li>
+  </ul>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 21: SAMUDRA VASANE DEVI ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Samudra Vasane Devi<br><span>サムドラ・ヴァサネ・デーヴィー</span></div>
+
+  <div class="mantra-sanskrit">
+    समुद्रवसने देवि पर्वतस्तनमण्डले ।<br>
+    विष्णुपत्नि नमस्तुभ्यं पादस्पर्शं क्षमस्वमे ॥
+  </div>
+
+  <div class="mantra-roman">
+    Samudra-Vasane Devi Parvata-Stana-Mannddale |<br>
+    Vissnnu-Patni Namas-Tubhyam Paada-Sparsham Kssamasva-Me ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>1：（おお大地母神よ）おおデーヴィー、海をあなたの衣とし、山をあなたの胸とする方</p>
+    <p>2：ヴィシュヌ神の配偶者よ、あなたへの礼拝。あなたの神聖な体である大地に足で触れることをお赦しください</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>健康・幸福をもたらし、体に静けさをもたらします。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 22: KRISHNA ILLUSTRATION ===== -->
+<div class="illustration-page">
+  <div>
+    <div style="font-size:8rem;opacity:0.18;margin-bottom:20px;">🪈</div>
+    <div style="font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.4em;color:var(--soft);opacity:0.6;">クリシュナ</div>
+  </div>
+  <div class="page-footer" style="position:absolute;bottom:32px;left:0;right:0;">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 23: DHYANA MULAM ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Dhyana Mulam<br><span>ディヤーナ・ムーラム</span></div>
+
+  <div class="mantra-sanskrit">
+    ध्यानमूलं गुरुर्मूर्तिः<br>
+    पूजामूलं गुरुर्पदम् ।<br>
+    मन्त्रमूलं गुरुर्वाक्यं<br>
+    मोक्षमूलं गुरुर्कृपा ॥
+  </div>
+
+  <div class="mantra-roman">
+    Dhyaana-Muulam Gurur-Muurtih<br>
+    Puujaa-Muulam Gurur-Padam |<br>
+    Mantra-Muulam Gurur-Vaakyam<br>
+    Mokssa-Muulam Guruur-Krpaa ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>1：瞑想の根本はグルの姿</p>
+    <p>2：崇拝の根本はグルの足</p>
+    <p>3：マントラの根本はグルの言葉</p>
+    <p>4：解脱の根本はグルの恩寵</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>この祈りにおいて、姿・足・言葉・恩寵はすべて成功に重要であることを学びます。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 24: OM AKHANDA ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Om Akhanda<br><span>オーム・アカンダ・マンダラカーラム</span></div>
+
+  <div class="mantra-roman">
+    Om Akhanda Manadalakaram Vyaptam yena Charaacharam<br>
+    Tadpadam Darshitam Yena Tasmai Sri Guruve Namaha
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>主よ、あなたの姿は分割不可能な全体であり、動くもの（生命体）と動かないもの（非生命体）の両方の現れに遍在しています。</p>
+    <p>グルよ、そのような主の足を見た方（究極との一体性を体験した方）、おお祝福された方よ、礼拝いたします。</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>修行者が社会から孤立していると感じているとき、または分離感を感じているときに使えるマントラです。つながりと全体性の感覚を生み出し、私たちは自分の感情ではないという事実への感謝を育みます。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 25: OM BRAHMANANDA ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Om Brahmananda<br><span>オーム・ブラフマーナンダム</span></div>
+
+  <div class="mantra-roman">
+    Om Brahmanandam parama sukhadam kevalam jnaanamurtim<br>
+    Dvandvaateetam gaganasadrusham tatvamasyadi lakshyam -1<br><br>
+    Ekam nityam vimalamachalam sarvadheesaakshibhuutam<br>
+    Bhaavaateetam triguna rahitam sadgurum tam namaami -2
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>ブラフマンの至福を得た方、最高の喜び、純粋な（幻惑のない）、知恵の化身</p>
+    <p>世界の二元性を超え、霊性において空高く、「私はそれである」に注意を向けている方</p>
+    <p>神聖と一体、永遠、不純なく、真理に不動に確立され、全知から全てを証人する方</p>
+    <p>心（感情）を超え、三グナ（サットヴァ・ラジャス・タマス）のない方、その聖なるグルへ礼拝いたします。</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>このマントラは私たちの心から暗闇を取り除き、無限の自己へと導きます。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 26: OM SARVESHAAM ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Om Sarveshaam<br><span>オーム・サルヴェーシャーム</span></div>
+
+  <div class="mantra-roman">
+    Om Sarveshaam Svastir-Bhavatu |<br>
+    Sarveshaam Shaantir-Bhavatu |<br>
+    Sarveshaam Purnnam-Bhavatu |<br>
+    Sarveshaam Manggalam-Bhavatu |<br>
+    Om Shaantih Shaantih Shaantih ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>1：すべての人に幸福がありますように</p>
+    <p>2：すべての人に平和がありますように</p>
+    <p>3：すべての人に充実がありますように</p>
+    <p>4：すべての人に吉祥がありますように</p>
+    <p>5：オーム、平和、平和、平和</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>精神的な障害、エネルギーの詰まり、感情的なアンバランスを解消します。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 27: OM POORNAMADAH ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Om Poornamadah<br><span>オーム・プールナマダハ</span></div>
+
+  <div class="mantra-roman">
+    Om poornamadah poornamidam poornaat poornamudachyate<br>
+    Poornasya poornamaadaaya poornamevaavashishsyate<br>
+    Om shaantih shaantih shaantih
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>オーム、あれは完全であり、これも完全である。完全性から完全性が生まれる。</p>
+    <p>完全性から完全性が取り除かれても、完全性のみが残る。</p>
+    <p>オーム、平和、平和、平和。</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>人間関係に関連する課題やネガティブな感情に作用します。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 28: OM ASATO MA ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Om Asato Ma<br><span>オーム・アサト・マー・サドガマヤ</span></div>
+
+  <div class="mantra-sanskrit">
+    ॐ असतो मा सद्गमय ।<br>
+    तमसो मा ज्योतिर्गमय ।<br>
+    मृत्योर्मा अमृतं गमय ।<br>
+    ॐ शान्तिः शान्तिः शान्तिः ॥
+  </div>
+
+  <div class="mantra-roman">
+    Om Asato Maa Sad-Gamaya |<br>
+    Tamaso Maa Jyotir-Gamaya |<br>
+    Mrtyor-Maa Amrtam Gamaya |<br>
+    Om Shaantih Shaantih Shaantih ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>1：オーム、（おお主よ）私を（非現実の現象世界に）留めず、（永遠の自己の）現実へと導いてください</p>
+    <p>2：私を（無知の状態の）闇に留めず、（霊的知識の）光へと導いてください</p>
+    <p>3：私を（死の世界に）留めず、（自己実現の）不死の世界へと導いてください</p>
+    <p>4：オーム、平和、平和、平和</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>これらの詩節を唱えることで、心の平和と家庭にポジティブなエネルギーがもたらされると信じられています。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 29: OM NAMO BHAGAVATE ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Om Namo Bhagavate<br><span>オーム・ナモー・バガヴァテ・ヴァースデーヴァーヤ</span></div>
+
+  <div class="mantra-roman">
+    Om namo bhagavate vasudevaya<br>
+    Om namo bhagavate vasudevaya<br>
+    Om namo bhagavate vasudevaya<br>
+    Om namo bhagavate vasudevaya
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>「ヴァースデーヴァ（ヴィシュヌ神）への礼拝」を意味し、「ヴァースデーヴァに頭を垂れます」と解釈できます。しかし、その意味と重要性において深遠です。</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>このマントラの効力は、輪廻（誕生と死の永遠のサイクル）からの究極の自由を得るための霊的な導きを与えることができます。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 30: OM NAMAH SHIVAYA ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Om Namah Shivaya<br><span>オーム・ナマハ・シヴァーヤ</span></div>
+
+  <div class="mantra-roman">
+    Om Namah Shivaaya<br>
+    Shivaaya namaha, Shivaaya namah om<br>
+    Shivaaya namaha, namaha Shivaaya<br>
+    Shambhu Shankara namah Shivaaya<br>
+    Girijaa Shankara namah Shivaaya<br>
+    Arunaachala Shiva namah Shivaaya
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>「吉祥なるシヴァへの礼拝、これ以上に吉祥なるものは存在しないシヴァタラへの礼拝」</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <ul class="benefits-text">
+    <li>死への恐怖を取り除きます</li>
+    <li>すべての肉体的・精神的疾患を癒す強力なヒーリング・マントラです</li>
+  </ul>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 31: OM NAMO NARAYANAHA ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Om Namo Narayanaha<br><span>オーム・ナモー・ナーラーヤナーヤ</span></div>
+
+  <div class="mantra-roman">
+    Om Namo Narayanaha
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p><strong>OM（オーム）</strong> — 宇宙に響き渡る根本の音</p>
+    <p><strong>Namo（ナモー）</strong> — 私は頭を垂れます、敬意を表します</p>
+    <p><strong>Narayanaya（ナーラーヤナーヤ）</strong> — ナーラーヤナ（宇宙の保護者ヴィシュヌ神の名前）へ</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <ul class="benefits-text">
+    <li>心と体に穏やかさと調和を取り戻します</li>
+    <li>ネガティブな感情から解放します</li>
+    <li>繁栄・愛・豊かさ・栄光・力・知恵・知識をもたらします</li>
+  </ul>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 32: SHRI RAM JAI RAM ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Shri Ram Jai Ram<br><span>シュリー・ラーム・ジャイ・ラーム</span></div>
+
+  <div class="mantra-roman">
+    Shri Ram Jai Ram Jai Jai Ram
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>「シュリー」とは文字通り吉祥を意味し、名前の前に尊称として使われます。ラーマの物語はラーマーヤナで語られており、妻はシーター、慈悲と勇気で知られています。</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>心を浄化し、神への帰依心を授けます。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== PAGE 33: OM SAHA NAU AVATU (2nd) ===== -->
+<div class="mantra-page">
+  <div class="side-mandala">❋</div>
+  <div class="mantra-name">Om Saha Nau Avatu<br><span>オーム・サハ・ナウ・アヴァトゥ</span></div>
+
+  <div class="mantra-roman">
+    Om Saha Nau-Avatu |<br>
+    Saha Nau Bhunaktu |<br>
+    Saha Viiryam Karavaavahai |<br>
+    Tejasvi Nau-Adhiitam-Astu Maa Vidvissaavahai |<br>
+    Om Shaantih Shaantih Shaantih ||
+  </div>
+
+  <div class="mantra-section-title">意味</div>
+  <div class="meaning-text">
+    <p>アウム！彼が私たち両方を共に守りますように。彼が私たち両方を共に養いますように。</p>
+    <p>私たちが大きなエネルギーで共に働けますように。</p>
+    <p>私たちの学びが活力に満ち効果的でありますように。</p>
+    <p>私たちが互いに争いませんように（互いを憎みませんように）。</p>
+    <p>アウム！私の中に平和がありますように！私の環境に平和がありますように！私に作用する力に平和がありますように！</p>
+  </div>
+
+  <div class="mantra-section-title">功徳・効果</div>
+  <div class="benefits-text">
+    <p>すべてのサンスクリット・マントラは体の異なる部分に特別な癒しのエネルギーを活性化させます。</p>
+  </div>
+
+  <div class="page-footer">ALVAR AYURVEDA · OSAKA HONMACHI</div>
+</div>
+
+<!-- ===== GLOBAL FOOTER ===== -->
+<div class="global-footer">
+  <span class="global-footer-brand">ALVAR AYURVEDA</span>
+  <span class="global-footer-location">OSAKA HONMACHI · JAPAN</span>
+  <div style="margin-top:16px;font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:rgba(42,157,143,0.4);">॥ ॐ ॥</div>
+</div>
+
+</body>
+</html>
